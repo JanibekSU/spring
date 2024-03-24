@@ -1,0 +1,221 @@
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+body{
+    background-color: grey;
+}
+.product-link {
+    color: #000 !important;
+    text-decoration: none
+}
+.highlight {
+    color: gray; /* Цвет текста */
+    font-weight: bold; /* Жирный шрифт */
+}
+.rounded {
+    background-color: black;
+    border-radius: 25px;
+}
+.bg-light {
+    background-color: black;
+}
+
+.card {
+
+    height: 100%; /* Делаем карту (карточку) полностью высотой родительского контейнера */
+
+    color: black; /* Красный цвет фона */
+
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+p {
+    color: #666;
+    margin-bottom: 0;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+/* Ваш пользовательский CSS */
+.city-button {
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Добавлено свойство transform в transition */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Выравнивание текста вверху */
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    flex-direction: column; /* Столбцовая ориентация */
+    padding: 10px; /* Добавление отступов */
+
+}
+
+#icon-grid {
+    background-color: white; /* Цвет фона */
+}
+.city-button:hover {
+    background-color: #f0f0f0; /* Цвет при наведении мышью */
+    transform: scale(1.05); /* Увеличиваем масштаб при наведении на 5% */
+}
+
+.city-info {
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон для информации */
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: auto; /* Отступ от нижней части кнопки */
+}
+
+.city-info h3,
+.city-info p {
+    margin: 0; /* Удаление внешних отступов */
+    color: #fff; /* Цвет текста */
+}
+
+
+.card-img-top {
+    width: 100%; /* Ширина изображения на 100% от родительского контейнера */
+    height: auto; /* Автоматическая высота изображения */
+}
+
+.card-body {
+    padding: 15px; /* Добавляем отступы вокруг содержимого карточки */
+}
+
+.car {
+    height: 100%;
+    border-bottom: 2px solid #dee2e6; /* Цвет барьера */
+    color: blue; /* Красный цвет фона */
+
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left:20px;
+    border-bottom: 1px solid #dee2e6; /* Цвет барьера */
+    padding-bottom: 10px; /* Отступ снизу для создания пространства между элементами */
+    margin-bottom: 20px;
+
+}
+.car svg {
+    margin: 0 10px; /* Здесь 10px - это отступы сверху/снизу и слева/справа */
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 10px 0;
+}
+.footer-text-left,
+.footer-text-right {
+    padding: 0 15px;
+    color: #6c757d; /* серый цвет текста */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 60px; /* Высота футера */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px; /* Высота футера */
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 10px 0;
+}
+
+
+.carm {
+    position: relative;
+    overflow: hidden; /* чтобы обрезать текст, который может выйти за пределы изображения */
+    display: flex;
+    align-items: stretch; /* Выравниваем фотографии по высоте */
+
+}
+
+.carm img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Сохраняем пропорции изображения, заполняя контейнер */
+
+}
+.card-body {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный фон текста */
+    color: #fff; /* цвет текста */
+    text-align: center;
+}
+.barrier {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+}
+.card-title,
+.card-text {
+    margin-bottom: 0; /* убираем отступ снизу у заголовка и текста */
+}
+.carm-text {
+    margin-bottom: 0; /* убираем отступ снизу у заголовка и текста */
+    color: white;
+}
+
+
+/* Пример стилей для фотографий */
+.photo {
+    border-radius: 50%; /* Для круглых фотографий */
+}
